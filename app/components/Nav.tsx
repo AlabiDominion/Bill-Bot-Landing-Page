@@ -7,15 +7,13 @@ import { motion, Variants } from 'framer-motion'
 const navVariants: Variants = {
   hidden: {
     y: -20,
-    scale: 0.9,
     opacity: 0
   },
   show:{
     y: 0,
-    scale: 1,
     opacity: 1,
     transition: {
-      duration: 1
+      duration: 0.5
     }
   }
 }
@@ -27,11 +25,11 @@ const Nav = () => {
       variants={navVariants}
       initial = 'hidden'
       animate = 'show'
-      className="w-full h-[50px] bg-white shadow-md">
+      className="w-full z-10 fixed flex items-center h-[64px] bg-white shadow-md">
 
-      <div className='p-[9px] display-flex'>
+      <div className='p-2.25 flex items-center gap-2'>
         <i className='bx bx-check-shield text-blue-600 text-[30px]'></i>
-        <h3 className='text-[#1c398e] text-[2re-900m]'>BILL BOT</h3>
+        <h3 className='text-xl font-bold text-blue-900'>BILL BOT</h3>
       </div> 
       
     </motion.div>
