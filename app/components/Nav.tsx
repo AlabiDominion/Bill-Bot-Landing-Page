@@ -27,12 +27,20 @@ const Nav = () => {
       variants={navVariants}
       initial = 'hidden'
       animate = 'show'
-      className="w-full h-[50px] bg-white shadow-md">
+      className="w-full h-[60px] bg-white shadow-md flex items-center justify-between p-[20px] sticky">
 
-      <div className='p-[9px] display-flex'>
+      <div className='p-[10px] flex items-center gap-1'>
         <i className='bx bx-check-shield text-blue-600 text-[30px]'></i>
-        <h3 className='text-[#1c398e] text-[2re-900m]'>BILL BOT</h3>
-      </div> 
+        <h3 className='text-[#1c398e] text-xl font-bold'>BILL BOT</h3>
+      </div>
+      <div className="flex items-center gap-3">
+        <ul className='gap-6 flex items-center font-medium text-base'>
+            <li className='hover:text-blue-600 cursor-pointer'>How it works</li>
+            <li className='hover:text-blue-600 cursor-pointer'>Pricing</li>
+            <li className='hover:text-blue-600 cursor-pointer'>Trust & Transparency</li>
+        </ul>
+        <button type="button" className='text-white bg-blue-600 rounded-lg p-[5px] font-medium hover:bg-blue-700'>Upload Your Bill</button>
+        </div> 
       
     </motion.div>
   )
