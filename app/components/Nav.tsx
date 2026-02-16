@@ -55,7 +55,7 @@ const [isOpen, setIsOpen] = useState(false)
       variants={navVariants}
       initial = 'hidden'
       animate = 'show'
-      className="w-full h-16 bg-white shadow-md flex items-center justify-between p-[20px] fixed">
+      className="w-full h-16 bg-white shadow-md flex items-center justify-between p-[20] fixed z-1000">
 
       <motion.div variants={navLogoVariants} className='p-2.5 flex items-center gap-1'>
         <i className='bx bx-check-shield text-blue-600 text-[30px]'></i>
@@ -68,7 +68,7 @@ const [isOpen, setIsOpen] = useState(false)
             <motion.a variants={navListVariants} className='hover:text-blue-600 cursor-pointer'>Pricing</motion.a>
             <motion.a variants={navListVariants} className='hover:text-blue-600 cursor-pointer'>Trust & Transparency</motion.a>
         </motion.div>
-        <motion.button variants={navLogoVariants} type="button" className='text-white bg-blue-600 rounded-lg p-[5px] font-medium hover:bg-blue-700 hidden md:flex active:scale-[0.95]'>Upload Your Bill</motion.button>
+        <motion.button variants={navLogoVariants} type="button" className='text-white bg-blue-600 rounded-lg p-[5] font-medium hover:bg-blue-700 hidden md:flex active:scale-[0.95]'>Upload Your Bill</motion.button>
         </div>
 
         <button onClick={() => setIsOpen(!isOpen)} className=' focus:outline-none md:hidden'>   
@@ -76,7 +76,7 @@ const [isOpen, setIsOpen] = useState(false)
         </button> 
 
         {isOpen && (
-          <motion.div className='absolute shadow-md top-16 w-full z-50 left-0 md:hidden p-[4px] bg-white '>
+          <motion.div className='fixed space-y-4 px-4 py-4 shadow-md top-16 w-full z-50 left-0 md:hidden p-[4px] bg-white '>
             <a href="" className="block hover:text-blue-600">How it works</a>
             <a href="" className="block hover:text-blue-600">Pricing</a>
             <a href="" className="block hover:text-blue-600">Trust & Transparency</a>
