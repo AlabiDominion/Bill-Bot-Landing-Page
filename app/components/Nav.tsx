@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { motion, Variants } from 'framer-motion'
-
+import Link from "next/link"
 
 
 const navVariants: Variants = {
@@ -64,7 +64,7 @@ const [isOpen, setIsOpen] = useState(false)
       <div className="flex items-center gap-3 md:flex ">
         <motion.div 
         className='gap-6 flex items-center font-medium text-base hidden md:flex'>
-            <motion.a variants={navListVariants} className='hover:text-blue-600 cursor-pointer'>How it works</motion.a>
+            <motion.a variants={navListVariants} className='hover:text-blue-600 cursor-pointer'><Link href="./howItWorks.tsx">How it works</Link> </motion.a>
             <motion.a variants={navListVariants} className='hover:text-blue-600 cursor-pointer'>Pricing</motion.a>
             <motion.a variants={navListVariants} className='hover:text-blue-600 cursor-pointer'>Trust & Transparency</motion.a>
         </motion.div>
