@@ -11,7 +11,7 @@ export default function Home() {
       <Nav />
       <Banner/>
       <main className="grow">
-        <section className="relative top-[50] p-20 lg:py-32 w-full items-center justify-center">
+        <section className="relative  p-20 lg:py-32 w-full items-center justify-center">
           <div className="container p-4">
             <div className="text-center items-center">
               <div className="inline-block text-blue-800 bg-blue-100 rounded-full text-xs font-semibold px-2.5 py-0.5">Medical Advocacy for Patients</div>
@@ -20,10 +20,10 @@ export default function Home() {
               <p className="text-xl text-slate-600 mb-10 leading-relaxed">Don't let medical debt overwhelm you. Bill bot negotiates directly with hospitals to reduce unfair charges. You only pay if we save you money.</p>
             </div>
             <div className="gap-4 flex flex-col items-center justify-center sm:flex-row">
-              <a href="">
+              <Link href="/uploadYourBill">
               <button className="bg-blue-600 text-white text-lg p-5 font-medium items-center transition-all rounded-lg hover-bg-blue-700 active:scale-[0.95]">Upload Your Bill
                 <i className="bx bx-right-arrow-alt ml-2"></i>
-              </button></a>
+              </button></Link>
                 <Link 
                     href="/howItWorks" 
                     className="hover:text-blue-600 cursor-pointer">
@@ -46,10 +46,10 @@ export default function Home() {
         </section>
 
         <section className=" py-20 w-full bg-slate-50">
-          <div className="container px-4 w-full">
+          <div className=" px-4 w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full ">
             <div className="md:cols-span-2 gap-12 items-center">
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">The system is broken, but you don't have to pay the price.</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">The system is broken, but you don&apos;t have to pay the price.</h2>
               <div className="flex gap-2 w-full items-center">
               <div className="bg-red-200 rounded-lg text-center flex justify-center items-center w-12 h-12 p-2">
                 <i className="uil uil-heartbeat font-extrabold text-red-600 text-3xl "></i>
@@ -79,7 +79,7 @@ export default function Home() {
             <div className="bg-white rounded-lg p-8 border-slate-100 shadow-xl">
               <div className="bg-slate-50 p-4 rounded-lg border-l-4 border-red-500 mb-4">
                 <h2 className="text-red-600 font-bold">COMMON ISSUE FOUND</h2>
-                <p className="font-medium italic text-slate-900">&quot; inflated Facilty Fees & CPT Code Upcoding &quot;</p>
+                <p className="font-medium italic text-slate-900">&quot; inflated Facility Fees & CPT Code Upcoding &quot;</p>
               </div>
               <div className="bg-slate-50 p-4 rounded-lg border-l-4 mb-4 border-blue-500">
                 <h2 className="text-blue-600 font-bold">BILL BOT RESULT</h2>
@@ -135,9 +135,9 @@ export default function Home() {
               <h2 className="font-bold text-3xl md:text-3xl">Stop stressing about medical debt.</h2>
             <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">Join thousands of patients who have saved millions. Remember: Hospitals expect negotiation. Let us do it for you≥</p>
 
-            <a href="#" >
+            <Link href="/uploadYourBill">
               <button className="bg-white text-center text-blue-600 rounded-md gap-2 font-medium transition-all outline-none h-14 hover:bg-blue-50 px-8 active:scale-1.2">Upload Yor Bill Now</button>
-            </a>
+            </Link>
 
             <p className="text-blue-100 text-sm mt-6">Takes less than 2 minutes to start</p>
           

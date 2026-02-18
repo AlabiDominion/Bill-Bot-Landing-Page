@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import Link from "next/link"
 
 export default function howItWorks() {
   return (
@@ -16,7 +17,7 @@ export default function howItWorks() {
         </section>
 
         <section className='py-20 items-center'>
-            <div className='container px-4 bg-slate-50 justify-center items-center w-full'>
+            <div className=' px-4 bg-slate-50 justify-center py-10 items-center'>
                 <div className='max-w-4xl mx-auto space-y-12'>
                     <div className='flex flex-col md:flex-row gap-8 items-start p-8 rounded-2xl bg-white shadow-sm border-slate-100 relative'>
                         <div className='bg-slate-50 rounded-xl p-2'>
@@ -93,10 +94,10 @@ export default function howItWorks() {
             </div>
         </section>
 
-        <section className='py-20 text-center'> 
-            <div className='container px-4'>
+        <section className='py-20 text-center bg-slate-50'> 
+            <div className='px-4'>
                 <h2 className='font-bold text-3xl text-slate-900 mb-8'>Ready to start saving?</h2>
-                <a><button className='bg-blue-600 hover:bg-blue-700 active:scale-1.1 text-lg px-8 h-14 font-medium transition-all rounded-md mb-8 gap-2 text-white'>Get Your Bill Analyzed <i className='uil uil-arrow-right'></i></button></a>
+                <Link href="/uploadYourBill"><button className='bg-blue-600 hover:bg-blue-700 active:scale-1.1 text-lg px-8 h-14 font-medium transition-all rounded-md mb-8 gap-2 text-white'>Get Your Bill Analyzed <i className='uil uil-arrow-right'></i></button></Link>
             </div>
         </section>
     </main>

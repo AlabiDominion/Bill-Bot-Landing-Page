@@ -4,14 +4,14 @@ import Link from "next/link";
 function footer() {
   return (
     <>
-      <footer className="border-t bg-slate-50">
-        <div className="container px-4 py-12 md:py-16">
+      <footer className="border-t border-slate-200 bg-slate-50 ">
+        <div className="px-4 py-12 md:py-16">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="justify-center">
-              <a href="" className="items-center flex gap-2">
+              <Link href="/" className="items-center flex gap-2">
               <i className="bx bx-check-shield font-extrabold text-blue-600 text-3xl "></i>
               <span className="text-blue-600 font-bold text-xl">Bill Bot</span>
-              </a>
+              </Link>
               <p className="text-slate-500 text-sm">Empowering patients to fight unfair medical bills. We handle the negotiation so you focus on your recovery</p>
             </div>
 
@@ -19,8 +19,8 @@ function footer() {
               <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Service</h3>
               <ul className="text-sm text-slate-500 space-y-2">
                 <Link href="/howItWorks" className="hover:text-blue-600 cursor-pointer block">How it works</Link>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Upload a Bill</a></li>
+                <Link href="/pricing" className="hover:text-blue-600 cursor-pointer block">Pricing</Link>
+                <Link href="/uploadYourBill" className="hover:text-blue-600 cursor-pointer block">Upload a Bill</Link>
                 <li><a href="">Trust & Transparency</a></li>
               </ul>
             </div>
