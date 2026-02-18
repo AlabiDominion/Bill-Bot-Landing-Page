@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "next/link";
 
 function footer() {
   return (
@@ -17,7 +18,7 @@ function footer() {
             <div>
               <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Service</h3>
               <ul className="text-sm text-slate-500 space-y-2">
-                <li><a href="">How it Works</a></li>
+                <Link href="/howItWorks" className="hover:text-blue-600 cursor-pointer block">How it works</Link>
                 <li><a href="">Pricing</a></li>
                 <li><a href="">Upload a Bill</a></li>
                 <li><a href="">Trust & Transparency</a></li>

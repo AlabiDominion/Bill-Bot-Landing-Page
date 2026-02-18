@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Link from "next/link";
 import Banner from "./components/Banner";
 
 export default function Home() {
@@ -23,9 +24,11 @@ export default function Home() {
               <button className="bg-blue-600 text-white text-lg p-5 font-medium items-center transition-all rounded-lg hover-bg-blue-700 active:scale-[0.95]">Upload Your Bill
                 <i className="bx bx-right-arrow-alt ml-2"></i>
               </button></a>
-              <a href="">
+                <Link 
+                    href="/howItWorks" 
+                    className="hover:text-blue-600 cursor-pointer">
                 <button className="border border-blue-200 text-blue-800 text-lg font-medium transition-all rounded-lg hover:bg-blue-50  p-5 items-center active:scale-[0.95]">How it works</button>
-              </a>
+              </Link>
             </div>
             <p className="justify-center flex items-center mt-4 text-slate-500 gap-2">
               <i className="bx bx-check-circle text-green-500 "></i>
