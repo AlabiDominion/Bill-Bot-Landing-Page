@@ -74,7 +74,7 @@ const [isOpen, setIsOpen] = useState(false)
             <MotionLink href="./pricing" variants={navListVariants} className='hover:text-blue-600 cursor-pointer'>
               Pricing
               </MotionLink>
-            <MotionLink href="/" variants={navListVariants} className='hover:text-blue-600 cursor-pointer'>Trust & Transparency</MotionLink>
+            <MotionLink href="./trustAndTransparency" variants={navListVariants} className='hover:text-blue-600 cursor-pointer'>Trust & Transparency</MotionLink>
         </motion.div>
         <Link href="/uploadYourBill">
         <motion.button variants={navLogoVariants} type="button" className='text-white bg-blue-600 rounded-lg p-[5] font-medium hover:bg-blue-700 hidden md:flex active:scale-[0.95]'>Upload Your Bill</motion.button></Link>
@@ -88,7 +88,7 @@ const [isOpen, setIsOpen] = useState(false)
           <motion.div className='fixed space-y-4 px-4 py-4 shadow-md top-16 w-full z-50 left-0 md:hidden p-[4] bg-white '>
              <Link href="/howItWorks" className="hover:text-blue-600 cursor-pointer block">How it works</Link>
              <Link href="/pricing" className="hover:text-blue-600 cursor-pointer block">Pricing</Link>
-              <a href="" className="block hover:text-blue-600">Trust & Transparency</a>
+             <Link href="/trustAndTransparency" className="hover:text-blue-600 cursor-pointer block">Trust & Transparency</Link>
               <Link href="/uploadYourBill">
           <button type="button" className='text-white bg-blue-600 rounded-lg p-[5] font-medium hover:bg-blue-700 active:scale-[0.95] w-full'>Upload Your Bill</button></Link>
           </motion.div>

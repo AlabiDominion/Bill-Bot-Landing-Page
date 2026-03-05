@@ -12,7 +12,7 @@ export default function Home() {
       <Banner/>
       <main className="grow">
         <section className="relative  p-20 lg:py-32 w-full items-center justify-center">
-          <div className="container p-4">
+          <div className=" p-4">
             <div className="text-center items-center">
               <div className="inline-block text-blue-800 bg-blue-100 rounded-full text-xs font-semibold px-2.5 py-0.5">Medical Advocacy for Patients</div>
               <h1 className="font-extrabold mb-6 text-4xl md:text-6xl">We fight your medical bills</h1>

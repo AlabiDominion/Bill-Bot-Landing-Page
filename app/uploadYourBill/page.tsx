@@ -1,5 +1,6 @@
 "use client";
 import React, { useState , useEffect } from 'react'
+import {useRouter} from 'next/navigation';
 import Nav from "../components/Nav";
 import Link from "next/link"
 import Footer from "../components/Footer";
@@ -8,14 +9,21 @@ import Footer from "../components/Footer";
 
 export default function Upload() {
     const [status, setStatus] = useState("idle");
+    const router = useRouter();
+    const [fileUrl, setFileUrl] = useState(null)
     const handleUpload = (e) => {
         const file = e.target.files[0];
         if (!file) return;
         
+        const url = URL.createObjectURL(file);
+        setFileUrl(url);
+
     setStatus("analyzing");
 
     setTimeout(() => {
         setStatus("success");
+        sessionStorage.setItem("uploadedFile", url);
+        router.push("/preview");
     }, 3000)
 }
 const reset = () => setStatus("idle");
